@@ -362,8 +362,8 @@ button:focus {
     line-height: 14px;
   }
 
-  .content {
-    margin-block-end: 52px;
+  .content__list {
+    gap: 48px;
   }
 
   .content__list-item {
@@ -393,14 +393,18 @@ button:focus {
     inline-size: 306px;
     block-size: 84px;
     display: grid;
-    place-items: center;
+    justify-items: center;
     gap: 8px;
   }
 
   .floppy {
     inline-size: 28px;
     block-size: 28px;
-    align-self: self-end;
+    align-self: end;
+  }
+
+  .footer__save-button .button__text {
+    align-self: start;
   }
 }
 
