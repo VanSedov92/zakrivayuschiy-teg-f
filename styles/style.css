@@ -44,8 +44,8 @@ button:focus {
   font-size: clamp(3.0625rem, 1.9087rem + 4.9231vw, 4.0625rem);
   font-weight: var(--font-weight-regular, 400);
   line-height: 65px;
-  text-align: left;
-  min-inline-size: 455px;
+  text-align: center;
+  min-inline-size: min-content;
   block-size: fit-content;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
@@ -115,18 +115,18 @@ button:focus {
   font-family: var(--accent-font);
   font-size: 14px;
   line-height: 14px;
-  inline-size: fit-content; 
+  inline-size: fit-content;
   opacity: 0.5;
   pointer-events: none;
   color: #000;
-  text-stroke: 1px #fff;
   -webkit-text-stroke: 1px #fff;
+  text-stroke: 1px #fff;
 } 
 
 @supports ((text-stroke: 1px #fff) or (-webkit-text-stroke: 1px #fff)) {
   .image__label {
-    text-stroke: 1px #fff;
   -webkit-text-stroke: 1px #fff;
+  text-stroke: 1px #fff;
   }
 }
 
@@ -134,6 +134,7 @@ button:focus {
   display: grid;
   gap: 25px;
   padding: 25px;
+  min-block-size: min-content;
 }
 
 .content__paragraph {
@@ -141,8 +142,7 @@ button:focus {
   font-weight: var(--font-weight-regular, 400);
   line-height: var(--main-text-line-height);
   text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
+  min-block-size: fit-content;
 }
 
 .button__like {
@@ -363,16 +363,17 @@ button:focus {
   }
 
   .content__list {
-    gap: 48px;
+    gap: 47px;
   }
 
   .content__list-item {
     min-inline-size: 375px;
-    min-block-size: 500px;
+    min-block-size: min-content;
   }
 
   .content__list-subtitle {
     min-inline-size: 375px;
+    min-block-size: min-content;
   }
 
   .content__image-label {
@@ -386,7 +387,8 @@ button:focus {
   }
 
   .content__text {
-    gap: 25px;
+    gap: 27px;
+    min-block-size: min-content;
   }
 
   .footer__save-button {
