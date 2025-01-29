@@ -1,7 +1,3 @@
-/** {
-  outline: 1px solid red;
-} */
-
 button:focus {
   outline: none;
 }
@@ -390,6 +386,23 @@ button:focus {
 
   .save-button .button__text {
     align-self: start;
+  }
+
+  .popup[open] {
+    inline-size: 341px;
+  }
+  
+  .popup__image {
+    inline-size: 257px;
+}
+
+  .popup__title {
+    min-inline-size: 198px;
+  }
+  
+  .popup__button {
+    inline-size: 259px;
+    block-size: 38px;
   }
 }
 
