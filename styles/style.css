@@ -2,10 +2,6 @@ button:focus {
   outline: none;
 }
 
-* {
-  outline: 1px solid red;
-}
-
 .page {
   min-inline-size: 320px;
   max-inline-size: 700px;
