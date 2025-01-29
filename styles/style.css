@@ -2,6 +2,10 @@ button:focus {
   outline: none;
 }
 
+* {
+  outline: 1px solid red;
+}
+
 .page {
   min-inline-size: 320px;
   max-inline-size: 700px;
@@ -49,7 +53,7 @@ button:focus {
 .header__subtitle {
   font-family: var(--accent-font, 'PressStart2P');
   font-size: clamp(0.875rem, 0.226rem + 2.7692vw, 1.4375rem);
-  font-weight: 400;
+  font-weight: var(--font-weight-regular, 400);
   line-height: 23px;
   text-align: left;
   text-underline-position: from-font;
@@ -57,7 +61,7 @@ button:focus {
   text-transform: uppercase;
   margin: auto;
 }
-
+/* основной контент с картинками */
 .content {
   margin: 0 auto;
   display: grid;
@@ -125,7 +129,7 @@ button:focus {
     -webkit-text-stroke: 1px #fff;
     text-shadow: none;
   }
-}
+} 
 
 .content__text {
   display: grid;
@@ -139,7 +143,7 @@ button:focus {
   line-height: var(--main-text-line-height, 21px);
   text-align: left;
 }
-
+/* кнопки лайка */
 .button__like {
   display: flex;
   justify-self: end;
@@ -235,7 +239,7 @@ button:focus {
   color: #fff;
   mix-blend-mode: difference;
 }
-
+/* дискета и кнопка сохранения */
 .floppy {
   inline-size: 21px;
   block-size: 21px;
@@ -284,9 +288,9 @@ button:focus {
 
 .popup__title {
   font-family: var(--accent-font, 'PressStart2P');
-  font-weight: 400;
+  font-weight: var(--font-weight-regular, 400);
   font-size: 14px;
-  line-height: 21px;
+  line-height: var(--main-text-line-height, 21px);
   inline-size: 234px;
   text-transform: uppercase;
 }
@@ -388,21 +392,13 @@ button:focus {
     align-self: start;
   }
 
-  .popup[open] {
-    inline-size: 341px;
-  }
-  
   .popup__image {
-    inline-size: 257px;
-}
-
-  .popup__title {
-    min-inline-size: 198px;
+    
+    min-inline-size: 257px;
   }
   
   .popup__button {
-    inline-size: 259px;
-    block-size: 38px;
+    min-inline-size: 257px;
   }
 }
 
