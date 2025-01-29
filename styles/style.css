@@ -15,7 +15,8 @@ button:focus {
   background-size: cover;
   display: grid;
   place-content: center;
-  margin: auto;
+  margin: 0 auto;
+  padding-block: 103px;
   font-family: var(--main-font, 'Inter-Variables');
   font-variation-settings: 'wght' var(--font-weight-regular, 400);
 }
@@ -23,7 +24,7 @@ button:focus {
 .header {
   background-color: var(--bg-color, #fff);
   display: grid;
-  margin: 102px auto;
+  margin: 0 auto 103px;
   place-items: center;
   inline-size: clamp(375px, 100vw, 700px);
   border: 2px solid #000;
@@ -335,8 +336,12 @@ button:focus {
 }
 
 @media (width <= 375px) {
+  .page {
+    padding-block: 95px;
+  }
+
   .header {
-    margin: 95px auto;
+    margin-block-end: 95px;
   }
 
   .header__title {
@@ -348,7 +353,7 @@ button:focus {
   }
 
   .content__list {
-    gap: 52px;
+    gap: 51px;
   }
 
   .content__list-item {
