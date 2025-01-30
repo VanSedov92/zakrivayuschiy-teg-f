@@ -1,3 +1,7 @@
+* {
+  outline: 1px solid red;
+}
+
 button:focus {
   outline: none;
 }
@@ -55,7 +59,7 @@ button:focus {
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
   text-transform: uppercase;
-  margin: auto;
+  margin: 0 auto;
 }
 /* основной контент с картинками */
 .content {
@@ -63,18 +67,20 @@ button:focus {
   display: grid;
   gap: 45px;
   place-items: center;
+  inline-size: 100%;
 }
 
 .content__list {
   display: grid;
   gap: 52px;
-  inline-size: fit-content;
+  inline-size: 100%;
 }
 
 .content__list-item {
   background-color: var(--bg-color, #fff);
   border: 2px solid #000;
-  inline-size: fit-content;
+  inline-size: 100%;
+  margin: 0 auto;
 }
 
 .content__list-subtitle {
@@ -82,7 +88,8 @@ button:focus {
   font-family: var(--main-font, 'Inter-Variable');
   font-size: var(--main-font-size, 18px);
   line-height: var(--card-title-line-height, 21.78px);
-  inline-size: fit-content;
+  inline-size: 100%;
+  margin: 0 auto;
   font-variation-settings: 'wght' var(--font-weight-bold, 700);
 }
 
