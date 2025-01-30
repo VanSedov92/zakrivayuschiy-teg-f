@@ -253,7 +253,6 @@ button:focus {
 .popup[open] {
   position: fixed;
   inset: 0;
-  padding: 0;
   display: grid;
   gap: 30px;
   padding-block: 30px;
