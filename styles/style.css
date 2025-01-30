@@ -257,12 +257,12 @@ button:focus {
 .popup[open] {
   position: fixed;
   inset: 0;
-  inline-size: 353px;
   display: grid;
   gap: 30px;
   padding: 30px;
   justify-content: center;
   align-content: center;
+  min-inline-size: 353px;
   transition: opacity 0.3s ease-in-out;
 }
 
@@ -273,6 +273,7 @@ button:focus {
 .popup__image {
   display: flex;
   gap: 20px;
+  inline-size: 293px;
   align-items: center;
 }
 
@@ -388,13 +389,20 @@ button:focus {
     align-self: start;
   }
 
+  .popup[open] {
+    inline-size: 341px;
+  }
+
   .popup__image {
-    
-    min-inline-size: 257px;
+    inline-size: 257px;
+  }
+
+  .popup__title {
+    inline-size: 198px;
   }
   
   .popup__button {
-    min-inline-size: 257px;
+    inline-size: 257px;
   }
 }
 
