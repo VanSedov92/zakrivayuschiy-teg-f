@@ -170,10 +170,6 @@ button:focus {
   transition: 0.3s linear;
 }
 
-.like-icon .contour {
-  transition: 0.1s linear;
-}
-
 .like-icon:hover .core {
   fill: var(--heart-fill-black, #000);
   transition: fill 0.3s linear;
